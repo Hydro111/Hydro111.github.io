@@ -1,0 +1,76 @@
+body {
+	font-family: Lato;
+	font-size: 12pt;
+}
+
+.sidenav {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 10em; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	right: 0;
+	background-color: #aaaaaa; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+	font-size: 14pt;
+}
+
+.main {
+	padding: .5em 12em 0 .5em;
+}
+
+.sidenav a {
+	text-decoration: underline;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.dropdown .closed img {
+	rotate: 0deg;
+}
+
+.dropdown .open img {
+	rotate: 90deg;
+}
+
+.dropdown img {
+	width: 0.9em;
+	height: 0.9em;
+}
+
+.dropdown {
+	list-style-type: none;
+}
+
+.closed .dropdown_element {
+	display: none;
+}
+
+.open .dropdown_element {
+	display: inherit;
+}
+
+.dropdown_element li {
+	list-style-type: disc;
+}
+
+.dropdown_element {
+	list-style-type: none;
+}
+
+#header {
+	position: sticky;
+	top: .5em;
+	text-align: center;
+	padding: 1em 0 1em 0;
+	background-color: black;
+	color: white;
+	transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

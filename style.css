@@ -18,7 +18,7 @@ h3 {
 
 .sidenav {
 	height: 100%; /* Full-height: remove this if you want "auto" height */
-	width: 8rem; /* Set the width of the sidebar */
+	width: 12rem; /* Set the width of the sidebar */
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	z-index: 1; /* Stay on top */
 	top: 0; /* Stay at the top */
@@ -83,7 +83,7 @@ h3 {
 	padding: 1rem 0 1rem 0;
 	background-color: black;
 	color: white;
-	width: calc(100% - 8rem);
+	width: calc(100% - 12rem);
 }
 
 #header h1 {

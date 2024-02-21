@@ -7,8 +7,8 @@ mention team name-->
 <head>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="main.js"></script>
-	<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
-	<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+	<!-- <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" /> -->
+	<!-- <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script> -->
 </head>
 <body>
 	<div id="header">
@@ -29,7 +29,7 @@ mention team name-->
 			<div class="right">
 				<p>
 					I am a junior at the Academy for Math Engineering and Science, and I am very interested in software development. 
-					I currently lead the software branch of the FRC robotics team at my school. In addition to my work with the team, 
+					I currently lead the software branch of the FRC team at my school, the AMES Amperes. In addition to my work with the team, 
 					I have worked on a variety of other projects on my own, as well as in groups. In school, I take and excel in 
 					advanced classes, including concurrent enrollment classes from the University of Utah.
 				</p>
@@ -55,44 +55,69 @@ mention team name-->
 		
 		<a id="internship" class="section">Internship</a>
 		<a id="robotics" class="section">Robotics</a>
-		<a id="projects" class="section">Projects</a>
-		<h3>
-			App Lab Graphing Calculator
-		</h3>
-		<div class="elementPair">
-			<div class="left">
-				<p>
-					In this project, I made a graphing calculator for a pair project in my AP CS principles class. 
-					I wrote the parser routine, evaluation routine, and graphing framework. My partner wrote the 
-					app navigation. I used a recursive object structure in JavaScript to repersent an expression 
-					typed in by the user, whether on the graphing or evaluation screen. Each object held two other 
-					objects, as well as the operation to combine them with. The objects held could be other expressions,
-					or a terminating x or constant. The parser would translate a string mathematical expression and use
-					order of operations to generate an expression object. An expression is evaluated by recursively traversing
-					the expression object and combining its components using its operation.
-				</p>
-			</div>
-			<div class="right">
-				<iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/HXjObG3PStOIujBDUVWz4mr5zvdV_zhyO3ls4gtGiyA/embed"></iframe>
-			</div>
-		</div>
-		<h3>
 
+
+		<a id="projects" class="section">Projects</a>
+
+		<h3 id="graphing_calculator">
+			Graphing Calculator
 		</h3>
-		<div class="elementPair">
-			<div class="left">
-				<img src="WyrmHeartScreenshot.png" width="100%">
-				<script type="py" src="Dungeon-Generator-Non-AP/main.py" terminal worker width="100%"></script>
-			</div>
-			<div class="right">
-				<p>
-					For my AP CS principles final project, I created a adventure game taking place in a procedurally
-					generated maze. The project was written in Python, and I used the object oriented paradigm to organize
-					the code. The player was a singleton, the enemies were classes extending a base enemy class, and so on
-					for most elements in the game.
-				</p>
-			</div>
-		</div>
+		<div class="elementPair"> <div class="left">
+			<p>
+				In this project, I made a graphing calculator for a pair project in my AP CS principles class. 
+				I wrote the parser routine, evaluation routine, and graphing framework. My partner wrote the 
+				app navigation. I used a recursive object structure in JavaScript to repersent an expression 
+				typed in by the user, whether on the graphing or evaluation screen. Each object held two other 
+				objects, as well as the operation to combine them with. The objects held could be other expressions,
+				or a terminating x or constant. The parser would translate a string mathematical expression and use
+				order of operations to generate an expression object. An expression is evaluated by recursively traversing
+				the expression object and combining its components using its operation.
+			</p>
+		</div> <div class="right">
+			<iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/HXjObG3PStOIujBDUVWz4mr5zvdV_zhyO3ls4gtGiyA/embed"></iframe>
+		</div> </div>
+
+		<h3 id="wyrm_heart">
+			Wyrm Heart
+		</h3>
+		<div class="elementPair"> <div class="left">
+			<img src="WyrmHeartScreenshot.png" width="100%">
+			<!-- <script type="py" src="Dungeon-Generator-Non-AP/main.py" terminal worker width="100%"></script> -->
+		</div> <div class="right">
+			<p>
+				For my AP CS principles final project, I created a adventure game taking place in a procedurally
+				generated maze. The project was written in Python, and I used the object oriented paradigm to organize
+				the code. The player was a singleton, the enemies were classes extending a base enemy class, and so on
+				for most elements in the game.
+			</p>
+		</div> </div>
+
+		<h3 id="relative_faith">
+			Relative Faith
+		</h3>
+		<div class="elementPair"> <div class="left">
+			<p>
+				Relative Faith was a video game I worked on with a group as a part of a game development class.
+			</p>
+		</div> <div class="right">
+			<img src="placeholder">
+		</div> </div>
+
+
+		<h3 id="desmos_rendering">
+			Desmos 3D Rendering
+		</h3>
+
+		<h3 id="website">
+			This Website
+		</h3>
+		<div class="elementPair"> <div class="left">
+			<p>
+				I wrote this website in raw HTML from the ground up.
+			</p>
+		</div> <div class="right">
+			<iframe width="100%" height="500 rem" src="https://hydro111.github.io/"></iframe>
+		</div> </div>
 	</div>
 	<div class="sidenav">
 		<ul class="dropdown">
@@ -131,8 +156,12 @@ mention team name-->
 			<li class="closed">
 				<img src="right-arrow-svgrepo-com.svg" onclick="dropdownOnClick(this)"> <a href="#projects">Projects</a>
 				<ul class="dropdown_element">
-					<li>one</li>
-					<li>two</li>
+					<li><a href="#graphing_calculator">Graphing Calculator</a></li>
+					<li><a href="#wyrm_heart">Wyrm Heart</a></li>
+					<li><a href="#relative_faith">Relative Faith</a></li>
+					<li><a href="#desmos_rendering">Desmos 3D Rendering</a></li>
+					<li><a href="#website">This Website</a></li>
+					<!--Graping Calc, Wyrm Heart, Flick Chess, Relative Faith, Desmos 3D rendering, This Website-->
 				</ul>
 			</li>
 		</ul>

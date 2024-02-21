@@ -1,5 +1,5 @@
 html {
-	scroll-padding-top: 10em; /*This number will need to be changed at some point*/
+	scroll-padding-top: 10rem; /*This number will need to be changed at some point*/
 }
 
 body {
@@ -9,13 +9,16 @@ body {
 }
 
 html, body {
-    margin: 0;
-    height: 100%;
+    min-height: 100%;
+}
+
+h3 {
+	text-align: center;
 }
 
 .sidenav {
 	height: 100%; /* Full-height: remove this if you want "auto" height */
-	width: 8em; /* Set the width of the sidebar */
+	width: 8rem; /* Set the width of the sidebar */
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	z-index: 1; /* Stay on top */
 	top: 0; /* Stay at the top */
@@ -26,8 +29,9 @@ html, body {
 }
 
 .main {
-	padding: 1em;
-	width: calc(100% - 10em);
+	margin-left: 6rem;
+	padding: 1rem;
+	width: calc(100% - 20rem);
 }
 
 .sidenav a {
@@ -47,8 +51,8 @@ html, body {
 }
 
 .dropdown img {
-	width: 0.9em;
-	height: 0.9em;
+	width: 0.9rem;
+	height: 0.9rem;
 }
 
 .dropdown {
@@ -79,11 +83,11 @@ html, body {
 	padding: 1rem 0 1rem 0;
 	background-color: black;
 	color: white;
-	width: calc(100% - 8em);
+	width: calc(100% - 8rem);
 }
 
 #header h1 {
-	margin: 0 0 1rem 0;
+	margin: 0 0 0rem 0;
 }
 
 .inlineImage {
@@ -93,7 +97,7 @@ html, body {
 .elementPair {
 	display: flex;
 	flex-wrap: nowrap;
-	padding: 1em 0;
+	padding: 1rem 0;
 }
 
 .elementPair>div.left {

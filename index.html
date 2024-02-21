@@ -7,6 +7,8 @@ mention team name-->
 <head>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+	<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -18,6 +20,7 @@ mention team name-->
 		</em>
 	</div>
 	<div class="main">
+		<div id="spacer"></div>
 		<a id="home" class="section">Home</a>
 		<div class="elementPair">
 			<div class="left">
@@ -38,11 +41,11 @@ mention team name-->
 				<p></p>
 				<p style="width: 70%; margin:auto;">Hale is so great, he's the best ever. Totally hire him right now; this is from a very real person!</p>
 				<p></p>
-				<p style="color: darkgray; text-align: center;">Real person - coolEmail@netscape.com</p>
+				<p style="color: darkgray; text-align: center;">Real person - President of the United States - coolEmail@netscape.com</p>
 				<p></p>
 				<p style="width: 70%; margin:auto;">Hale is so great, he's the best ever. Totally hire him right now; this is from a very real person!</p>
 				<p></p>
-				<p style="color: darkgray; text-align: center;">Real person - coolEmail@netscape.com</p>
+				<p style="color: darkgray; text-align: center;">Real person - Internship Mentor - coolEmail@netscape.com</p>
 				<p></p>
 			</div>
 			<div class="right">
@@ -53,10 +56,46 @@ mention team name-->
 		<a id="internship" class="section">Internship</a>
 		<a id="robotics" class="section">Robotics</a>
 		<a id="projects" class="section">Projects</a>
+		<h3>
+			App Lab Graphing Calculator
+		</h3>
+		<div class="elementPair">
+			<div class="left">
+				<p>
+					In this project, I made a graphing calculator for a pair project in my AP CS principles class. 
+					I wrote the parser routine, evaluation routine, and graphing framework. My partner wrote the 
+					app navigation. I used a recursive object structure in JavaScript to repersent an expression 
+					typed in by the user, whether on the graphing or evaluation screen. Each object held two other 
+					objects, as well as the operation to combine them with. The objects held could be other expressions,
+					or a terminating x or constant. The parser would translate a string mathematical expression and use
+					order of operations to generate an expression object. An expression is evaluated by recursively traversing
+					the expression object and combining its components using its operation.
+				</p>
+			</div>
+			<div class="right">
+				<iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/HXjObG3PStOIujBDUVWz4mr5zvdV_zhyO3ls4gtGiyA/embed"></iframe>
+			</div>
+		</div>
+		<h3>
+
+		</h3>
+		<div class="elementPair">
+			<div class="left">
+				<img src="WyrmHeartScreenshot.png" width="100%">
+				<script type="py" src="Dungeon-Generator-Non-AP/main.py" terminal worker width="100%"></script>
+			</div>
+			<div class="right">
+				<p>
+					For my AP CS principles final project, I created a adventure game taking place in a procedurally
+					generated maze. The project was written in Python, and I used the object oriented paradigm to organize
+					the code. The player was a singleton, the enemies were classes extending a base enemy class, and so on
+					for most elements in the game.
+				</p>
+			</div>
+		</div>
 	</div>
 	<div class="sidenav">
 		<ul class="dropdown">
-
 			<li class="closed">
 				<img src="no_image.svg"> <a href="#home">Home</a>
 				<ul class="dropdown_element">

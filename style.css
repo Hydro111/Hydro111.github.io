@@ -1,5 +1,5 @@
 html {
-	scroll-padding-top: 10rem; /*This number will need to be changed at some point*/
+	scroll-padding-top: 7rem; /*This number will need to be changed at some point*/
 }
 
 body {
@@ -29,7 +29,7 @@ h3 {
 }
 
 .main {
-	margin-left: 4%;
+	margin-left: 3.5%;
 	padding: 1rem;
 	width: calc(100% - 20rem);
 }
@@ -113,8 +113,17 @@ h3 {
 	flex-basis: calc(50% - .5rem);
 }
 
+.elementPair>div>img {
+	width:100%
+}
+
 .elementPair>div>p {
 	margin-top: 0;
+}
+
+.content {
+	border-width: 2px;
+	border-color: #888888;
 }
 
 .section {

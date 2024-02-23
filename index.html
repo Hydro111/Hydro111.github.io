@@ -55,7 +55,36 @@ mention team name-->
 		
 		<a id="internship" class="section">Internship</a>
 		<a id="robotics" class="section">Robotics</a>
+		<img width="100%" class="content" src="FullTeam.png">
+		<p style="color: #888888; font-size: small; text-align: center;">Photo by Issac Madsen</p>
+		<div class="elementPair"> <div class="left">
+			<p>
+				I joined my school's robotics team, the Amperes, team 3243, in 2022. My first experience was preseason, where we created robots to complete a
+				simple challenge in a competition hosted by the school. My small group was able to achive 2nd at this competition of
+				around 20 teams, which we were very happy with. Next we moved on to the real season. I was part of the programming
+				subteam, and I helped program an extendable and pivotable arm, with a wrist rolling and pitching wrist on the end.
+				I used a variety of methods within the library for FRC, WPILib. We program in Java, and I gained much of my Java experience
+				through working on the robot. We participated in two regional competitions that year, and won some small awards in each.
+			</p>
+		</div> <div class="right">
+			<img width="100%" class="content" src="Robot.png">
+			<p style="color: #888888; font-size: small; text-align: center;">Photo by Issac Madsen</p>
+		</div> </div>
 
+		<div class="elementPair"> <div class="left">
+			<img width="100%" class="content" src="NeutrinoBlurred.jpg">
+			<p style="color: #888888; font-size: small; text-align: center;">Photo by Issac Madsen</p>
+		</div> <div class="right">
+			<p>
+				After the 2023 season, I was given the position of software lead, and I immediately set to work. I worked with our software
+				team to organize and work on a number of interseason projects to try and improve our team's strength and culture. We worked
+				on lessons for incoming programmers to try and reduce the barrier to entry of the programming team. We worked on documenting
+				our knowledge and past experience for those who came next. We also developed what code we could before the season started.
+				In the 2023 preseason I worked alongside the rest of the software team to include and support our new members of the programming
+				team, which included teaching lessons about programming, checking in and providing support when needed for programming the
+				preseason robots, and even having the programming team over for a game night on occasion.
+			</p>
+		</div> </div>
 
 		<a id="projects" class="section">Projects</a>
 
@@ -74,21 +103,23 @@ mention team name-->
 				the expression object and combining its components using its operation.
 			</p>
 		</div> <div class="right">
-			<iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/HXjObG3PStOIujBDUVWz4mr5zvdV_zhyO3ls4gtGiyA/embed"></iframe>
+			<iframe class="content" width="392" height="620" src="https://studio.code.org/projects/applab/HXjObG3PStOIujBDUVWz4mr5zvdV_zhyO3ls4gtGiyA/embed"></iframe>
 		</div> </div>
 
 		<h3 id="wyrm_heart">
 			Wyrm Heart
 		</h3>
 		<div class="elementPair"> <div class="left">
-			<img src="WyrmHeartScreenshot.png" width="100%">
+			<img class="content" src="WyrmHeartScreenshot.png" width="100%">
 			<!-- <script type="py" src="Dungeon-Generator-Non-AP/main.py" terminal worker width="100%"></script> -->
 		</div> <div class="right">
 			<p>
 				For my AP CS principles final project, I created a adventure game taking place in a procedurally
 				generated maze. The project was written in Python, and I used the object oriented paradigm to organize
 				the code. The player was a singleton, the enemies were classes extending a base enemy class, and so on
-				for most elements in the game.
+				for most elements in the game. It taught me a lot about code organization and problems with python.
+				If I were to come back to this project, there are quite a few things I would fix, such as a lack of 
+				gameplay diversity, strange pacing, and the amount of grind. Overall, I'm still quite happy with the project.
 			</p>
 		</div> </div>
 
@@ -97,26 +128,47 @@ mention team name-->
 		</h3>
 		<div class="elementPair"> <div class="left">
 			<p>
-				Relative Faith was a video game I worked on with a group as a part of a game development class.
+				Relative Faith was a video game I worked on with a group as a part of a game development class. In it,
+				you platform between planets, with one catch: the speed of light is very low. I wrote the relativistic physics
+				for this project, which involved making a modular script that would take in data from a game object about its
+				true velocity and forces, and puppeteer it to the correct position. Not only was this my first Godot project, it
+				was also my first time working with shader languages. Godot has a shader language similar to GLSL, and I used this
+				to attempt to implement length contraction, light travel distortion, and the dopler effect, but unfortunately, I
+				was never able to get it to work properly before reaching the deadline for the project and moving on.
 			</p>
 		</div> <div class="right">
-			<img src="placeholder">
+			<img class="content" src="RelativeFaithScreenshot.png">
 		</div> </div>
-
 
 		<h3 id="desmos_rendering">
 			Desmos 3D Rendering
 		</h3>
+		<div class="elementPair"> <div class="left">
+			<iframe class="content" style="aspect-ratio: 1;" src="https://www.desmos.com/calculator/4qvuuf0mxg?embed" width="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div> <div class="right">
+			<p>
+				In this project, I wrote a 3D graphing engine in the 2D graphing calculator Desmos. It taught me a lot about graphics
+				and rendering. The program in Desmos takes a list of verticies, as well as a list of triangles in terms of the indicies
+				of the relevant verticies, and generates a 2D triangle and color for each for Desmos to plot. I also performed backface
+				culling, and then sorted the triangles to preserve the correct occlusion of one by another. I enjoy working around
+				strange restrictions, and Desmos provides plenty of these. For example, there are no nested arrays, 2D arrays, or 3D
+				points in Desmos. This meant I had to use three lists for the verticies—one for the x, the y, and the z. In addition, 
+				I wrote a small python script to convert a .obj file into the relevant lists in a format I could import into Desmos.
+			</p>
+		</div> </div>
 
 		<h3 id="website">
 			This Website
 		</h3>
 		<div class="elementPair"> <div class="left">
 			<p>
-				I wrote this website in raw HTML from the ground up.
+				I wrote this website in raw HTML from the ground up. I had taken a "Creative Coding" class in middle school, which covered
+				HTML and CSS, but making this website has taught me much more about them. I decided to write it from scratch rather than
+				use a framework because I thought it would teach me more about frontend development, which I have done very little of. I
+				invite you to poke around this website with your browser's inspector and take a look!
 			</p>
 		</div> <div class="right">
-			<iframe width="100%" height="500 rem" src="https://hydro111.github.io/"></iframe>
+			<iframe class="content" src="https://hydro111.github.io/" width="100%" height="500rem" ></iframe>
 		</div> </div>
 	</div>
 	<div class="sidenav">

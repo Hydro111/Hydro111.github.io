@@ -20,7 +20,7 @@ mention team name-->
  -->
 <head>
 	<meta name="robots" content="noindex,nofollow" >
-	<title>Hale Barber - Robotics Captain</title>
+	<title>Hale Barber - Portfolio</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="main.js"></script>
 	<!-- <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" /> -->
@@ -32,7 +32,7 @@ mention team name-->
 			Hale Barber
 		</h1>
 		<em style="font-size: 14pt;">
-			Robotics Captain
+			halebarber.school@gmail.com
 		</em>
 	</div>
 	<div class="main">
@@ -51,7 +51,8 @@ mention team name-->
 				objects, as well as the operation to combine them with. The objects held could be other expressions,
 				or a terminating x or constant. The parser would translate a string mathematical expression and use
 				order of operations to generate an expression object. An expression is evaluated by recursively traversing
-				the expression object and combining its components using its operation.
+				the expression object and combining its components using its operation. The calculator is embedded here; 
+				the graphing section takes an expression of x (without f(x) or y) and graphs it.
 			</p>
 		</div> <div class="right">
 			<iframe class="content" width="392" height="620" src="https://studio.code.org/projects/applab/HXjObG3PStOIujBDUVWz4mr5zvdV_zhyO3ls4gtGiyA/embed"></iframe>
@@ -100,11 +101,12 @@ mention team name-->
 			<p>
 				In this project, I wrote a 3D graphing engine in the 2D graphing calculator Desmos. It taught me a lot about graphics
 				and rendering. The program in Desmos takes a list of vertices, as well as a list of triangles in terms of the indices
-				of the relevant vertices, and generates a 2D triangle and color for each for Desmos to plot. I also performed backface
+				of the relevant vertices, and generates a 2D triangle and color for each that Desmos can plot. I also performed backface
 				culling, and then sorted the triangles to preserve the correct occlusion of one by another. I enjoy working around
 				strange restrictions, and Desmos provides plenty of these. For example, there are no nested arrays, 2D arrays, or 3D
 				points in Desmos. This meant I had to use three lists for the vertices—one for the x, the y, and the z. In addition, 
 				I wrote a small python script to convert a .obj file into the relevant lists in a format I could import into Desmos.
+				The calculator is embedded here, and is intractable.
 			</p>
 		</div> </div>
 
@@ -121,7 +123,7 @@ mention team name-->
 				objects, and the class that implemented the Expression interface determined the operation, or if it was a leaf node 
 				(constant or variable). Then, making it calculate the derivative was as easy as writing a derivative function for each
 				function or operation, and making these use the chain rule. I also made a basic expression simplification algorithm, which
-				just got rid of redundant information like 'plus zero's or 'times one's.
+				just got rid of redundant information like plus-zero's or times-one's.
 			</p>
 		</div> </div>
 
@@ -131,11 +133,11 @@ mention team name-->
 		<div class="elementPair"> <div class="left">
 			<p>
 				I wrote a simulation of Maxwell's equations for a physics class project. The full paper I wrote about it is included
-				on the right, (with a github link at the bottom) but the general concept of how it works follows. The mathematical foundation
+				on the right, (with a Github link at the bottom) but the general concept of how it works follows. The mathematical foundation
 				is just that the differential form of Maxwell's equations have derivatives for the electric and magnetic fields tied up
 				with some other stuff that can be calculated if you know the field values at every point. If we pick a discrete time step,
 				we can just calculate the derivative, multiply by the time step to get the difference, and repeat to simulate over time.
-				This project was my first project mainly in Rust, and so I learned a lot from making it. I originally planned to have to simulation
+				This project was my first project mainly in Rust, and so I learned a lot from making it. I originally planned to have the simulation
 				run on the GPU to increase speed, which would have allowed for exponentially better time and space step sizes. Unfortunately,
 				the package I planned to use for GPU computation didn't work, and so I had to just write CPU code.
 			</p>
@@ -151,14 +153,15 @@ mention team name-->
 		</div> <div class="right">
 			<p>
 				Once, when thinking about control theory and differential equations (as one does) I came up with an idea: pathfinding in regular
-				euclidean space is a really well explored domain, but there's no reason you couldn't treat velocity or rotation as a physical dimension
+				Euclidean space is a really well explored domain, but there's no reason you couldn't treat velocity or rotation as a physical dimension
 				and pathfind in <em>state</em> space instead. Nodes could be generated by simulating what will happen a small time step in the future
 				with various control inputs, and the generated tree is easy to pathfind on. I decided to make a sample implementation of this idea for
 				a pendulum with a motor at its pivot. I wrote down the differential equation describing the change in velocity and position, and implemented
-				the aforementioned technique using a sort of A*. I say sort of because the heuristic I used (euclidean distance between a simulated point 
-				a bit in the future and the target point) often would overestimate the cost (time) required to reach a point. The program I wrote is just a prototype,
-				and could still do with a lot of optimization and refinement, but you can see the path it chose in state space on the left here. The red
-				dots are 1/20th of all the points it considered at some point. I wrote the program in C#, but I did the visualization in Desmos, because
+				the aforementioned technique using a sort of A*. I say "sort of" because the heuristic I used (Euclidean distance between a simulated point 
+				a bit in the future and the target point) often would overestimate the cost (time) required to reach a point. The program I wrote is just a prototype, 
+				but you can see the path it chose in state space on the left here. The red
+				dots are a random sample of all the points it considered. The x axis is position, and the y axis is velocity. The arrows show how the
+				system would evolve if left to its own devices. I wrote the program in C#, but I did the visualization in Desmos, because
 				it was easy to do.
 			</p>
 		</div> </div>
@@ -168,16 +171,17 @@ mention team name-->
 		</h3>
 		<div class="elementPair"> <div class="left">
 			<p>
-				Although it's not traditional computer programming, I'd like to share the fully functional, turing complete computer I built in the
-				video game Factorio. This project taught me a lot about computer architecture, and I ended up coming up with a weird, different CPU
-				architecture. The computer has three parts: the instruction ROM, where the program is stored and sent out from; the ALU, where computations
-				are done; and the register array, where all data is stored. (Full disclosure, my brother worked on a RAM module for high-density storage,
+				Although it's not traditional computer programming, I'd like to share the fully functional, Turing complete computer I built in the
+				video game Factorio. Factorio is a game about making factories, and includes some simple logic operations for controlling machines.
+				This project taught me a lot about computer architecture, and I ended up coming up with a weird, unique CPU
+				design for it. The computer has three parts: the instruction ROM, where the program is stored and sent out from; the ALU, where computations
+				are done; and the register array, where all data is stored. (My brother worked on a RAM module for high-density storage,
 				but it was never fully integrated with the main CPU, which I built.) In my architecture, all of the parts can send out instructions on a
-				central bus, and only when a "Done" instruction is sent is the next instruction sent from the ROM. For example, if an "AddReg" instruction
-				is sent out, the register will read this, and read the two registers specified to be added in the instruction. Then, a "Add" instruction
+				central bus. For example, if an "AddReg" instruction
+				is sent out, the register will read this, and read the two registers specified to be added in the instruction. Then, an "Add" instruction
 				will be sent by the register to the ALU, which will do the addition, and send a "Set" instruction back to the register, which will store the result.
 				Finally, the register will send a "Done" instruction, so the ROM knows to send out the next instruction in the program. This means the
-				CPU doesn't have a definite clock speed, it depends on what instructions are being executed. Finally, I wrote a basic assembler to turn
+				CPU doesn't have a definite clock speed; it depends on what instructions are being executed. Finally, I wrote a basic assembler to turn
 				text describing the instructions into a blueprint which can be pasted into the game and run.
 			</p>
 		</div> <div class="right">
@@ -190,10 +194,10 @@ mention team name-->
 			<li><a href="#wyrm_heart">Wyrm Heart</a></li>
 			<li><a href="#relative_faith">Relative Faith</a></li>
 			<li><a href="#desmos_rendering">Desmos 3D Rendering</a></li>
-			<li><a href="#website">This Website</a></li>
 			<li><a href="#derivative_calculator">Derivative Calculator</a></li>
 			<li><a href="#phys_project">Electromagnetic Simulation</a></li>
 			<li><a href="#state_space_pathfinding">State Space Pathfinding</a></li>
+			<li><a href="#factorio_computer">Factorio Computer</a></li>
 			<!--Graphing Calc, Wyrm Heart, Flick Chess, Relative Faith, Desmos 3D rendering, This Website, Factorio Computer-->
 		</ul>
 	</div>

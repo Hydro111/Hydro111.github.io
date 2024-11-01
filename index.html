@@ -42,6 +42,9 @@ mention team name-->
 		<h3 id="graphing_calculator">
 			Graphing Calculator
 		</h3>
+		<div class="subtitle">
+			<em>2021</em>
+		</div>
 		<div class="elementPair"> <div class="left">
 			<p>
 				In this project, I made a graphing calculator for a pair project in my AP CS principles class. 
@@ -58,26 +61,12 @@ mention team name-->
 			<iframe class="content" width="392" height="620" src="https://studio.code.org/projects/applab/HXjObG3PStOIujBDUVWz4mr5zvdV_zhyO3ls4gtGiyA/embed"></iframe>
 		</div> </div>
 
-		<h3 id="wyrm_heart">
-			Wyrm Heart
-		</h3>
-		<div class="elementPair"> <div class="left">
-			<img class="content" src="WyrmHeartScreenshot.png" width="100%">
-			<!-- <script type="py" src="Dungeon-Generator-Non-AP/main.py" terminal worker width="100%"></script> -->
-		</div> <div class="right">
-			<p>
-				For my AP CS principles final project, I created an adventure game taking place in a procedurally
-				generated maze. The project was written in Python, and I used the object oriented paradigm to organize
-				the code. The player was a singleton, the enemies were classes extending a base enemy class, and so on
-				for most elements in the game. It taught me a lot about code organization and problems with python.
-				If I were to come back to this project, there are quite a few things I would fix, such as a lack of 
-				gameplay diversity, strange pacing, and the amount of grind. Overall, I'm still quite happy with the project.
-			</p>
-		</div> </div>
-
 		<h3 id="relative_faith">
 			Relative Faith
 		</h3>
+		<div class="subtitle">
+			<em>2021</em>
+		</div>
 		<div class="elementPair"> <div class="left">
 			<p>
 				Relative Faith was a video game I worked on with a group as a part of a game development class. In it,
@@ -92,9 +81,35 @@ mention team name-->
 			<img class="content" src="RelativeFaithScreenshot.png">
 		</div> </div>
 
+		<h3 id="wyrm_heart">
+			Wyrm Heart
+		</h3>
+		<div class="subtitle">
+			<em class="subtitle">2022 &mdash;</em>
+			<a class="subtitle" href="https://replit.com/@HBSCH/Dungeon-Generator-Non-AP">Source code</a>
+		</div>
+		<div class="elementPair"> <div class="left">
+			<img class="content" src="WyrmHeartScreenshot.png" width="100%">
+			<!-- <script type="py" src="Dungeon-Generator-Non-AP/main.py" terminal worker width="100%"></script> -->
+		</div> <div class="right">
+			<p>
+				For my AP CS principles final project, I created an adventure game taking place in a procedurally
+				generated maze. The project was written in Python, and I used the object oriented paradigm to organize
+				the code. The player was a singleton, the enemies were classes extending a base enemy class, and so on
+				for most elements in the game. It taught me a lot about code organization and problems with python.
+				If I were to come back to this project, there are quite a few things I would fix, such as a lack of 
+				gameplay diversity, strange pacing, and the amount of grind. Overall, I'm still quite happy with the project.
+			</p>
+		</div> </div>
+
+		
+
 		<h3 id="desmos_rendering">
 			Desmos 3D Rendering
 		</h3>
+		<div class="subtitle">
+			<em class="subtitle">2023</em>
+		</div>
 		<div class="elementPair"> <div class="left">
 			<iframe class="content" style="aspect-ratio: 1;" src="https://www.desmos.com/calculator/4qvuuf0mxg?embed" width="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
 		</div> <div class="right">
@@ -106,13 +121,16 @@ mention team name-->
 				strange restrictions, and Desmos provides plenty of these. For example, there are no nested arrays, 2D arrays, or 3D
 				points in Desmos. This meant I had to use three lists for the vertices—one for the x, the y, and the z. In addition, 
 				I wrote a small python script to convert a .obj file into the relevant lists in a format I could import into Desmos.
-				The calculator is embedded here, and is intractable.
+				The renderer is embedded here, and is interactive. The link in the lower right can be used to see the source code.
 			</p>
 		</div> </div>
 
 		<h3 id="derivative_calculator">
 			Derivative Calculator
 		</h3>
+		<div class="subtitle">
+			<em class="subtitle">2023-2024</em>
+		</div>
 		<div class="elementPair"> <div class="left">
 			<img class="content" src="DerivativeCalculator.png" width="100%">
 		</div> <div class="right">
@@ -127,9 +145,36 @@ mention team name-->
 			</p>
 		</div> </div>
 
+		<h3 id="factorio_computer">
+			Factorio Computer
+		</h3>
+		<div class="subtitle">
+			<em class="subtitle">2024</em>
+		</div>
+		<div class="elementPair"> <div class="left">
+			<p>
+				Although it's not traditional computer programming, I'd like to share the fully functional, Turing complete computer I built in the
+				video game Factorio. Factorio is a game about making factories, and includes some simple logic operations for controlling machines.
+				This project taught me a lot about computer architecture, and I ended up coming up with a weird, unique CPU
+				design for it. The computer has three parts: the instruction ROM, where the program is stored and sent out from; the ALU, where computations
+				are done; and the register array, where all data is stored. In my architecture, all of the parts can send out instructions on a
+				central bus. For example, if an "AddReg" instruction
+				is sent out, the register will read this, and read the two registers specified to be added in the instruction. Then, an "Add" instruction
+				will be sent by the register to the ALU, which will do the addition, and send a "Set" instruction back to the register, which will store the result.
+				Finally, the register will send a "Done" instruction, so the ROM knows to send out the next instruction in the program. This means the
+				CPU doesn't have a definite clock speed; it depends on what instructions are being executed. Finally, I wrote a basic assembler to turn
+				text describing the instructions into a blueprint which can be pasted into the game and run.
+			</p>
+		</div> <div class="right">
+			<img class="content" src="InstructionTable.png" width="100%">
+		</div> </div>
+
 		<h3 id="phys_project">
 			Electromagnetic Simulation
 		</h3>
+		<div class="subtitle">
+			<em class="subtitle">2024</em>
+		</div>
 		<div class="elementPair"> <div class="left">
 			<p>
 				I wrote a simulation of Maxwell's equations for a physics class project. The full paper I wrote about it is included
@@ -148,6 +193,9 @@ mention team name-->
 		<h3 id="state_space_pathfinding">
 			State Space Pathfinding
 		</h3>
+		<div class="subtitle">
+			<em class="subtitle">2024</em>
+		</div>
 		<div class="elementPair"> <div class="left">
 			<img class="content" src="StateSpacePathfinding.png" width="100%">
 		</div> <div class="right">
@@ -166,44 +214,19 @@ mention team name-->
 			</p>
 		</div> </div>
 
-		<h3 id="factorio_computer">
-			Factorio Computer
-		</h3>
-		<div class="elementPair"> <div class="left">
-			<p>
-				Although it's not traditional computer programming, I'd like to share the fully functional, Turing complete computer I built in the
-				video game Factorio. Factorio is a game about making factories, and includes some simple logic operations for controlling machines.
-				This project taught me a lot about computer architecture, and I ended up coming up with a weird, unique CPU
-				design for it. The computer has three parts: the instruction ROM, where the program is stored and sent out from; the ALU, where computations
-				are done; and the register array, where all data is stored. (My brother worked on a RAM module for high-density storage,
-				but it was never fully integrated with the main CPU, which I built.) In my architecture, all of the parts can send out instructions on a
-				central bus. For example, if an "AddReg" instruction
-				is sent out, the register will read this, and read the two registers specified to be added in the instruction. Then, an "Add" instruction
-				will be sent by the register to the ALU, which will do the addition, and send a "Set" instruction back to the register, which will store the result.
-				Finally, the register will send a "Done" instruction, so the ROM knows to send out the next instruction in the program. This means the
-				CPU doesn't have a definite clock speed; it depends on what instructions are being executed. Finally, I wrote a basic assembler to turn
-				text describing the instructions into a blueprint which can be pasted into the game and run.
-			</p>
-		</div> <div class="right">
-			<img class="content" src="InstructionTable.png" width="100%">
-		</div> </div>
+		
 	</div>
 	<div class="sidenav">
 		<ul>
 			<li><a href="#graphing_calculator">Graphing Calculator</a></li>
-			<li><a href="#wyrm_heart">Wyrm Heart</a></li>
 			<li><a href="#relative_faith">Relative Faith</a></li>
+			<li><a href="#wyrm_heart">Wyrm Heart</a></li>
 			<li><a href="#desmos_rendering">Desmos 3D Rendering</a></li>
 			<li><a href="#derivative_calculator">Derivative Calculator</a></li>
+			<li><a href="#factorio_computer">Factorio Computer</a></li>
 			<li><a href="#phys_project">Electromagnetic Simulation</a></li>
 			<li><a href="#state_space_pathfinding">State Space Pathfinding</a></li>
-			<li><a href="#factorio_computer">Factorio Computer</a></li>
-			<!--Graphing Calc, Wyrm Heart, Flick Chess, Relative Faith, Desmos 3D rendering, This Website, Factorio Computer-->
 		</ul>
 	</div>
-	<!--Make this detect when it's too small and move the navigation to the top-->
-	
-	
-	
 </body>
 </html>

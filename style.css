@@ -127,6 +127,10 @@ h3 {
 	border-color: #888888;
 }
 
+.subtitle {
+	text-align: center;
+}
+
 .section {
 	display: inline-block;
 	font-size: 18pt;
